@@ -8,7 +8,7 @@ namespace LinkedListDemo
 {
     public class Linked_List
     {
-        public Node head; 
+        public Node head;
         public void Add(int data)
         {
             Node node = new Node(data);
@@ -23,9 +23,22 @@ namespace LinkedListDemo
                 {
                     temp = temp.next;
                 }
-                temp.next= node;
+                temp.next = node;
             }
-            Console.WriteLine(node.data);
+            Console.WriteLine($"{node.data} Inserted to Linked List");
+        }
+        public void Display()
+        {
+            Node temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("The LinkedList is Empty");
+            }
+            while(temp != null)
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
         }
     }
 }

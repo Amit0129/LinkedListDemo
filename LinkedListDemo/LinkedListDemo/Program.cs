@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("Enter 1 for LinkedList Demo");
                 Console.WriteLine("Enter 2 for Stack Demo");
-                Console.WriteLine("Enter 3 for Coustom Linked List");
+                Console.WriteLine("Enter 3 for Adding and Displaying LinkedList data");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -28,6 +28,7 @@
                         linked_List.Add(99);
                         linked_List.Add(999);
                         linked_List.Add(99999);
+                        linked_List.Display();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Choice");
