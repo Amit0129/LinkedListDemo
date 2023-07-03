@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace LinkedListDemo
 {
+    //LinkedList is an linear DataStructure which store the data in a Non-contigus way.
+    //The node or Element are linked with each other using pointer.
+    //LinkedList class Allow Insertion and Deletion of element from a list very fastly. 
+    //Node-node will be your exact value.
+    //Next-isreference of the next node.
     public class LinkedListBuilder
     {
         public void LinkList()
