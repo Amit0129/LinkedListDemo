@@ -34,10 +34,25 @@ namespace LinkedListDemo
             {
                 Console.WriteLine("The LinkedList is Empty");
             }
-            while(temp != null)
+            while (temp != null)
             {
                 Console.WriteLine(temp.data);
                 temp = temp.next;
+            }
+
+        }
+        public void Reverse_Order(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                head.next = temp;
             }
         }
     }
