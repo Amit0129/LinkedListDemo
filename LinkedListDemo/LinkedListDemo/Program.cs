@@ -1,4 +1,6 @@
-﻿namespace LinkedListDemo
+﻿using System.Collections.Generic;
+
+namespace LinkedListDemo
 {
     internal class Program
     {
@@ -13,6 +15,7 @@
                 Console.WriteLine("Enter 2 for Stack Demo");
                 Console.WriteLine("Enter 3 for Adding and Displaying LinkedList data");
                 Console.WriteLine("Enter 4 for Adding in Reverse Order");
+                Console.WriteLine("Enter 5 for Remove First Element");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -38,6 +41,10 @@
                         linked_List.Reverse_Order(29);
                         linked_List.Reverse_Order(92);
                         linked_List.Reverse_Order(11);
+                        linked_List.Display();
+                        break;
+                    case 5:
+                        linked_List.Remove_First();
                         linked_List.Display();
                         break;
                     default:
