@@ -64,5 +64,26 @@ namespace LinkedListDemo
             head = head.next;
             Console.WriteLine("First element run Sucessfully");
         }
+        public void Remove_Last()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            if (head.next == null)
+            {
+                Console.WriteLine("The LinkedList Only contain one element");
+                head = null;
+            }
+            else
+            {
+                Node temp = head.next;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+            }
+        }
     }
 }

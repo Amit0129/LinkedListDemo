@@ -16,6 +16,7 @@ namespace LinkedListDemo
                 Console.WriteLine("Enter 3 for Adding and Displaying LinkedList data");
                 Console.WriteLine("Enter 4 for Adding in Reverse Order");
                 Console.WriteLine("Enter 5 for Remove First Element");
+                Console.WriteLine("Enter 6 for Remove Last Element");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -45,6 +46,10 @@ namespace LinkedListDemo
                         break;
                     case 5:
                         linked_List.Remove_First();
+                        linked_List.Display();
+                        break;
+                    case 6:
+                        linked_List.Remove_Last();
                         linked_List.Display();
                         break;
                     default:
