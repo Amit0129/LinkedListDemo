@@ -85,5 +85,21 @@ namespace LinkedListDemo
                 temp.next = null;
             }
         }
+        public void Size()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            Node temp = head;
+            int count = 1;
+            while (temp.next != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            Console.WriteLine("The lengtn of the LinkedList is " + count);
+        }
+
     }
 }
