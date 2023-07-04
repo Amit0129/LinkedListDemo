@@ -100,6 +100,24 @@ namespace LinkedListDemo
             }
             Console.WriteLine("The lengtn of the LinkedList is " + count);
         }
-
+        public int Search(int value)
+        {
+            Node node = head;
+            if (node == null)
+            {
+                return -1;
+            }
+            int count = 0;
+            while (node != null)
+            {
+                if (node.data == value)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
+        }
     }
 }

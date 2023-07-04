@@ -18,6 +18,8 @@ namespace LinkedListDemo
                 Console.WriteLine("Enter 5 for Remove First Element");
                 Console.WriteLine("Enter 6 for Remove Last Element");
                 Console.WriteLine("Enter 7 to get the Size of LinkedList");
+                Console.WriteLine("Enter 8 for searching index of a value");
+
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -33,7 +35,6 @@ namespace LinkedListDemo
                         stackDemo.Stack();
                         break;
                     case 3:
-                        
                         linked_List.Add(99);
                         linked_List.Add(999);
                         linked_List.Add(99999);
@@ -56,6 +57,10 @@ namespace LinkedListDemo
                     case 7:
                         linked_List.Size();
                         linked_List.Display();
+                        break;
+                    case 8:
+                        int indexValue = linked_List.Search(11);
+                        Console.WriteLine(indexValue);
                         break;
                     default:
                         Console.WriteLine("Enter Valid Choice");
