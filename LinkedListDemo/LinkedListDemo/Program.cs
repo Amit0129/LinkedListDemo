@@ -9,6 +9,7 @@ namespace LinkedListDemo
             bool check = true;
             Linked_List linked_List = new Linked_List();
             StackLinkedlist stackList = new StackLinkedlist();
+            Queue_LinkedList queueList = new Queue_LinkedList();
             while (check)
             {
                 Console.WriteLine("Enter 1 for LinkedList Demo");
@@ -20,6 +21,7 @@ namespace LinkedListDemo
                 Console.WriteLine("Enter 7 to get the Size of LinkedList");
                 Console.WriteLine("Enter 8 for searching index of a value");
                 Console.WriteLine("Enter 9 for adding data to stack");
+                Console.WriteLine("Enter 10 for adding data to Queue");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -73,6 +75,15 @@ namespace LinkedListDemo
                         stackList.Pop();
                         Console.WriteLine("---------------");
                         stackList.Display();
+                        break;
+                    case 10:
+                        queueList.Enqueue(9);
+                        queueList.Enqueue(10);
+                        queueList.Enqueue(11);
+                        Console.WriteLine("---------------");
+                        queueList.Dequeue();
+                        Console.WriteLine("---------------");
+                        queueList.Display();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Choice");
