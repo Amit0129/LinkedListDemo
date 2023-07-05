@@ -8,7 +8,7 @@ namespace LinkedListDemo
         { 
             bool check = true;
             Linked_List linked_List = new Linked_List();
-
+            StackLinkedlist stackList = new StackLinkedlist();
             while (check)
             {
                 Console.WriteLine("Enter 1 for LinkedList Demo");
@@ -19,7 +19,7 @@ namespace LinkedListDemo
                 Console.WriteLine("Enter 6 for Remove Last Element");
                 Console.WriteLine("Enter 7 to get the Size of LinkedList");
                 Console.WriteLine("Enter 8 for searching index of a value");
-
+                Console.WriteLine("Enter 9 for adding data to stack");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
@@ -62,11 +62,17 @@ namespace LinkedListDemo
                         int indexValue = linked_List.Search(11);
                         Console.WriteLine(indexValue);
                         break;
+                    case 9:
+                        stackList.Push(100);
+                        stackList.Push(200);
+                        stackList.Push(300);
+                        stackList.Display();
+                        break;
                     default:
                         Console.WriteLine("Enter Valid Choice");
                         break;
                 }
-
+                Console.WriteLine();
                 Console.WriteLine("Enter y if you want to do more operation");
                 string exitOrNot = Console.ReadLine().ToLower();
                 if (exitOrNot == "y")
