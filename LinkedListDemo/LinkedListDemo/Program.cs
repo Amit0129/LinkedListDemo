@@ -67,6 +67,7 @@ namespace LinkedListDemo
                         stackList.Push(200);
                         stackList.Push(300);
                         stackList.Display();
+                        stackList.Peek();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Choice");
